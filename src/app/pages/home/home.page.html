@@ -1,20 +1,15 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      SuperQuiz
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <p>Anzahl der Fragen: {{data.currentQuiz.questions.length}}</p>
+  <ion-button shape="round" color="primary" (click)="showList()" expand="block" fill="outline">
+    Fragen erstellen
+  </ion-button>
+  
 </ion-content>
