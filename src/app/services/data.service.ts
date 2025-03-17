@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Quiz } from './Quiz';
 import { Question } from './Question';
+import { v4 as uuidv4 } from 'uuid';
 
 @Injectable({
   providedIn: 'root'
@@ -35,4 +36,16 @@ export class DataService {
   public getQuestion(qid: string): Question | undefined {
     return this.currentQuiz.questions.find(q => q.id === qid);
   }
+
+  public addQuestion(q: Question){
+    if(q.id === '0'){
+      q.id = uuidv4();
+    }
+    this.currentQuiz.questions.push(q);
+  }
+
+  public deleteQuestion(q: Question) {
+    this.currentQuiz.questions = this.currentQuiz.questions.filter(qq => qq.id !== q.id);
+  }
+  
 }
