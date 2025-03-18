@@ -1,0 +1,24 @@
+{
+  "id": "Initialquiz",
+  "quizName": "Städtequiz",
+  "questions": [
+    {
+      "id": "1",
+      "titel": "How many continents are there?",
+      "a1": "5",
+      "a2": "6",
+      "a3": "7",
+      "a4": "10",
+      "correct": 3
+    },
+    {
+      "id": "218325b4-fac4-4ec9-9758-83ffbb14fc80",
+      "titel": "Hauptstadt von Oberösterreich?",
+      "a1": "Linz",
+      "a2": "Wien",
+      "a3": "Graz",
+      "a4": "Steyr",
+      "correct": 1
+    }
+  ]
+}
