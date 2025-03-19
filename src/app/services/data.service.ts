@@ -29,7 +29,7 @@ export class DataService {
   }
 
   loadQuizFromJSON() {
-    this.http.get('https://www.schmiedl.co.at/json_cors/data.json').subscribe((data) => {
+    this.http.get('https://gist.githubusercontent.com/Michi4625/5b76d5347117c8c4c40e20377e662465/raw/45fdcb81234754d78b725e7328b3907ad803ed19/gistfile1.txt').subscribe((data) => {
       if (data && data.hasOwnProperty('quizName'))
         this.currentQuiz = data as Quiz;
       else
@@ -38,7 +38,7 @@ export class DataService {
   }
 
   /*public loadQuiz() {
-    let returnPromise = Preferences.get({key: 'GrischaSuperQuiz202503'});
+    let returnPromise = Preferences.get({key: 'MichiSuperQuiz202503'});
     returnPromise.then((q)=>{
       console.log("Hallo1");
       if (q.value)

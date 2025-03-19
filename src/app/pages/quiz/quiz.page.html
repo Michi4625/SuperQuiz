@@ -1,13 +1,36 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
     <ion-title>Quiz</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Quiz</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="quiz-content">
+  <div *ngIf="currentQuestion" class="quiz-container">
+    <!-- Punktestand -->
+    <div class="score-container">
+      <p>Punkte: <strong>{{ score }}</strong></p>
+    </div>
+
+    <!-- Frage -->
+    <div class="question-container">
+      <h2>{{ currentQuestion.title }}</h2>
+    </div>
+
+    <!-- Antwort-Buttons -->
+    <div class="answers-container">
+      <ion-button
+        *ngFor="let answer of [currentQuestion.a1, currentQuestion.a2, currentQuestion.a3, currentQuestion.a4]; let i = index"
+        expand="block"
+        fill="outline"
+        color="secondary"
+        shape="round"
+        class="answer-button"
+        (click)="answerQuestion(i + 1)">
+        {{ answer }}
+      </ion-button>
+    </div>
+  </div>
 </ion-content>
