@@ -29,7 +29,7 @@ export class DataService {
   }
 
   loadQuizFromJSON() {
-    this.http.get('https://gist.githubusercontent.com/Michi4625/5b76d5347117c8c4c40e20377e662465/raw/45fdcb81234754d78b725e7328b3907ad803ed19/gistfile1.txt').subscribe((data) => {
+    this.http.get('https://raw.githubusercontent.com/Michi4625/SuperQuiz/refs/heads/master/src/assets/data.json').subscribe((data) => {
       if (data && data.hasOwnProperty('quizName'))
         this.currentQuiz = data as Quiz;
       else

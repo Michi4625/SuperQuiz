@@ -4,7 +4,7 @@
   "questions": [
     {
       "id": "1",
-      "titel": "How many continents are there?",
+      "title": "Wie viele Kontintente gibt es?",
       "a1": "5",
       "a2": "6",
       "a3": "7",
@@ -13,12 +13,39 @@
     },
     {
       "id": "218325b4-fac4-4ec9-9758-83ffbb14fc80",
-      "titel": "Hauptstadt von Oberösterreich?",
+      "title": "Hauptstadt von Oberösterreich?",
       "a1": "Linz",
       "a2": "Wien",
       "a3": "Graz",
       "a4": "Steyr",
       "correct": 1
+    },
+    {
+      "id": "2d5c30f2-8967-4e9a-857e-c67423bb7f7b",
+      "title": "Was ist die Hauptstadt von Ägypten?",
+      "a1": "Cairo",
+      "a2": "Alexandria",
+      "a3": "Luxor",
+      "a4": "Aswan",
+      "correct": 1
+    },
+    {
+      "id": "303b47e7-fffe-4cd3-9ae7-44ff1980d126",
+      "title": "Welches Land ist bekannt für die Pyramiden?",
+      "a1": "Mexiko",
+      "a2": "Indien",
+      "a3": "Ägypten",
+      "a4": "Griechenland",
+      "correct": 3
+    },
+    {
+      "id": "57db7899-10fe-48a7-bce9-dcfb5f759b80",
+      "title": "Wie heißt das größte Land der Welt?",
+      "a1": "USA",
+      "a2": "China",
+      "a3": "Kanada",
+      "a4": "Russland",
+      "correct": 4
     }
   ]
 }
