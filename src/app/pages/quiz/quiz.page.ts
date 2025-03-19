@@ -4,7 +4,7 @@ import { AlertController, IonicModule, ToastController } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Question } from 'src/app/services/Question';
-import { Router } from '@angular/router'; // Importiere Router
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-quiz',
@@ -23,7 +23,7 @@ export class QuizPage implements OnInit {
     private dataService: DataService,
     private alertController: AlertController,
     private toastController: ToastController,
-    private router: Router // Füge Router hinzu
+    private router: Router 
   ) {}
 
   ngOnInit() {
@@ -43,7 +43,7 @@ export class QuizPage implements OnInit {
     const toast = await this.toastController.create({
       message: message,
       duration: 2000,
-      position: 'bottom', // Position auf 'top' setzen
+      position: 'bottom', 
       color: message === 'Richtig!' ? 'success' : 'danger' // Farbe abhängig von der Antwort setzen
     });
     await toast.present();
@@ -59,7 +59,7 @@ export class QuizPage implements OnInit {
           {
             text: 'OK',
             handler: () => {
-              this.router.navigate(['/home']); // Navigiere zur Startseite
+              this.router.navigate(['/home']); // Navigiere zur Startseite, wenn alle Fragen durch sind
             }
           }
         ]
